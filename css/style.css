@@ -6,6 +6,9 @@ body{
   width: 84px;
   height: 16px;
 }
+.current{
+  font-weight: bolder;
+}
 /* Header */
 .header{
     font-family: 'AG_Helvetica';
@@ -44,9 +47,6 @@ body{
   .menu-list-link:hover {
     cursor: pointer;
     text-decoration:underline;
-  }
-  .current{
-    font-weight: bolder;
   }
   /* First section: */
   .main-container{
@@ -145,9 +145,9 @@ body{
   .box2-topics-1{
     margin-bottom: 40px;
   }
-  .arrow{
+  .section2-arrow{
+    width:52px;
     height: 10px;
-    width: 6px;
   }
   .box2-Topic1 {
     margin-top: 40px;
@@ -189,10 +189,14 @@ body{
     font-family: 'Acumin Pro';
     line-height: 26px;
   }
-
-/* Secon section: */
+.section2-arrow{
+    width:52px;
+    height: 10px;
+}
+/* Second section: */
 .section2 {
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 .section2-box {
   max-width: 1160px;
@@ -254,10 +258,11 @@ body{
 } 
 /* Third section: */
 .section3{
-  margin-top: 40px;
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
 }
+/* section3-box1 */
 .section3-box1 {
 width: 760px;
 height: 951px;
@@ -329,4 +334,31 @@ color: #ffffff;
   font-family: 'Helvetica';
   line-height: 26px;
 }
+/* section3-box2 */
+.section3-box2 {
+  margin-left: 40px;
+  width: 360px;
+  height: 951px;
+  display: flex;
+  flex-direction: column;
 
+}
+.section3-box2-topics{
+  height: 900px;
+}
+.section3-box2-top{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.section3-box2-title{
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Acumin Pro';
+  line-height: 26px;
+}
+.section3-arrow{
+  width:52px;
+  height: 10px;
+
+}
