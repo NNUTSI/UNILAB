@@ -19,7 +19,6 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    max-width: 1440px;
     margin: 0 auto;
   }
   .header-logo {
@@ -344,7 +343,7 @@ color: #ffffff;
 
 }
 .section3-box2-topics{
-  height: 900px;
+  max-height: 900px;
 }
 .section3-box2-top{
   display: flex;
@@ -356,9 +355,87 @@ color: #ffffff;
   font-weight: bold;
   font-family: 'Acumin Pro';
   line-height: 26px;
+  padding-top: 20px;
 }
 .section3-arrow{
   width:52px;
   height: 10px;
 
+}
+/* footer */
+.footer{
+  min-height: 200px;
+  margin:  auto;
+  margin-top: 80px;
+  padding-top: 40px;
+  background-color:#A6ADB4 ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.column{
+  height: 84px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo{
+ color: #FFFFFF; 
+ font-size: 13px;
+ font-weight: bold;
+ font-family: Helvetica;
+ line-height: 20px;
+}
+.a-tag{
+  color: #CBD0D3;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: Helvetica;
+  line-height: 20px;
+}
+.container1{
+  width: 378px;
+  height: 84px;
+  display: flex;
+  justify-content: space-between;
+}
+.container2{
+  width: 262px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #CBD0D3;
+  font-size: 11px;
+  font-family: Helvetica;
+  line-height: 20px;
+}
+.input{
+  height: 40px;
+  border:2px solid #CBD0D3 ;
+  border-radius: 4px;
+  background-color: #A6ADB4;
+}
+.input-p{
+  color: #CBD0D3;
+  font-size: 11px;
+  font-family: Helvetica;
+  line-height: 20px;
+  margin-top: 10px;
+}
+::placeholder {
+  color: #CBD0D3;
+  opacity: 0.5; 
+  font-size: 13px;
+  font-family: Helvetica;
+  line-height: 20px;
+  padding-left: 10px;
+}
+.container3 {
+  width: 160px;
+  height: 16px;
+  display: flex;
+  justify-content: space-around;
+}
+.icon{
+  color: #ffffff;
 }
