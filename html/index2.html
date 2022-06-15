@@ -11,28 +11,30 @@
 </head>
 <body>
 <!-- Header -->
-    <header class="header">
-        <div class="header-container ">
-             <div class="header-logo">
-                 <h4>LOGO</h4>
-             </div>
-             <div class="menu">
-                <div class="header-menu">
-                    <nav >
-                    <ul class="header-menu-list">
-                        <li class="menu-list-item"> <a class="menu-list-link home1" href="/html/index1.html">HOME</a> </li>
-                        <li class="menu-list-item"> <a class="menu-list-link" href="#">DISCOVERY</a> </li>
-                        <li class="menu-list-item"> <a class="menu-list-link" href="#">PHOTOS</a> </li>
-                        <li class="menu-list-item"> <a class="menu-list-link" href="#">CONTACT</a> </li>
-                    </ul>
-                    </nav>
-                </div>
-             <div class="class=menu-list-link">
-                 <img  src="../img/christopher-campbell.png" alt="image" />
-             </div>
-             </div>
+<header class="header">
+    <div class="header-container ">
+         <div class="logo">
+             <a href="#">LOGO</a>
          </div>
-     </header>
+         <button class="nav-toggler" type="button" >
+            <span> </span>
+        </button>
+         <div class="row">
+            <nav class="nav" >
+                <ul class="header-menu-list">
+                    <li><a class="menu-list-link" href="/html/index1.html">HOME</a> </li>
+                    <li><a class="menu-list-link" href="#">DISCOVERY</a> </li>
+                    <li><a class="menu-list-link" href="#">PHOTOS</a> </li>
+                    <li><a class="menu-list-link" href="#">CONTACT</a> </li>
+                    <li><a class="menu-list-link profile" href="#">PROFILE</a> </li>
+                </ul>
+            </nav>
+            <div class="class=menu-list-link">
+                <img  src="../img/christopher-campbell.png" alt="image" />
+            </div>
+         </div>
+     </div>
+ </header>
 <!-- page2-section1 -->
     <section class="page2-section1">
         <div class="page2-box1">
@@ -58,11 +60,13 @@
                         <img class="top-img2" src="/img/filter.png" alt="image"> 
                     </div> 
                     <div class="collumn2-top2">
-                        <p class="top2-p"> Select a date </p>
-                        <input class="top2-input1" type="date">
-                        <p class="top2-p"> Enter the first keywords </p>
-                        <input class="top2-input2" type="text" id="lname" name="lname">
-                        <button class="top2-button">SEARCH</button>
+                        <div class="collumn2-top2-box">
+                            <label> Select a date </label>
+                            <input type="date" >
+                            <label> Enter the first keywords</label>
+                            <input type="text" value="" >
+                            <button>SEARCH</button>
+                        </div>
                     </div>
                 </div>
         </div>
@@ -157,5 +161,6 @@
         </div>
     </div>
 </footer>    
+<script src="/js/script.js"></script>
 </body>
 </html>
