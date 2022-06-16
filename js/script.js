@@ -13,8 +13,6 @@ function toggleBack() {
     mobileOverlay.classList.remove('active');
     
  }
-
-
  const getUsersButton = document.querySelector(".button");
  const cardsContainer = document.querySelector(".card_container");
  const userList = document.getElementById("users");
