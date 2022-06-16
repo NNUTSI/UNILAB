@@ -1,14 +1,48 @@
 const navToggler = document.querySelector('.nav-toggler');
+const mobileOverlay = document.querySelector('.mobile-overlay');
+const backButton = document.querySelector('.menu-logo');
 navToggler.addEventListener('click', navToggle);
+backButton.addEventListener('click', toggleBack);
+function navToggle() {
+    mobileOverlay.classList.toggle('active');
+    // document.getElementsByTagName("body")[0].style.visibility = "hidden";
+    
 
-function navToggle(){
-    navToggler.classList.toggle('header-menu-list');
-    const nav = document.querySelector('.nav')
-    nav.classList.toggle('open');
-    if(nav.classList.contains('open')){
-        nav.style.maxHeight = nav.scrollHeight + 'px';
-    }
-    else{
-        nav.removeAttribute('style');
-    }
 }
+function toggleBack() {
+    mobileOverlay.classList.remove('active');
+    
+ }
+
+
+ const getUsersButton = document.querySelector(".button");
+ const cardsContainer = document.querySelector(".card_container");
+ const userList = document.getElementById("users");
+ const singleUser = async (event) => {
+   const user = event.target.value;
+   console.log(user);
+   const response = await fetch(
+     `https://jsonplaceholder.typicode.com/users?name=${user}`
+   );
+   const [data] = await response.json();
+   console.log(data);
+   console.log(data.name);
+   const userCard = `
+     
+   <article class="user_card">
+     <div class="user"> 
+       <h3 class="user_name">${data.name}</h3>
+       <div class="user_information">
+       <p class="user_username">username: ${data.username}</p>
+       <p class="user_address">city: ${data.address.city}</p>
+       <p class="user_email">email: ${data.email}</p>
+       <p class="country_phone">phone: ${data.phone}</p>
+       </div>
+     </div>
+   </article>
+   `;
+   cardsContainer.insertAdjacentHTML("beforeend", userCard);
+ };
+ 
+ userList.addEventListener("change", singleUser);
+

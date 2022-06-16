@@ -863,6 +863,92 @@ color: #ffffff;
   margin-top: 40px;
 }
 
+/* index3.html file styles */
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #cfd6f0;
+}
+.select_user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+.label {
+  font-size: 32px;
+  color: #4b6a9b;
+  font-weight: bold;
+}
+.select {
+  border: 4px solid #4b6a9b;
+  width: 400px;
+  height: 70px;
+  margin-left: 30px;
+  border-radius: 4px;
+}
+.card_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  color: #4b6a9b;
+}
+.user_card {
+  width: 40vw;
+  border: 2px solid gray;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user_name {
+  margin-left: 30px;
+  font-size: 24px;
+}
+.user_information {
+  margin-right: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width: 1120px) {
+  .user_card {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 670px) {
+  .user_card {
+    width: 80vw;
+  }
+  .select {
+    width: 250px;
+    height: 50px;
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .label {
+    font-size: 16px;
+  }
+  .user_name {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+  .user_information {
+    font-size: 12px;
+    margin-right: 15px;
+  }
+}
+
 @media(max-width:768px){
   .section1{
     max-width: 768px;
@@ -913,6 +999,9 @@ color: #ffffff;
     display: none;
   } */
 }
+.mobile-overlay{
+  visibility: hidden;
+}
 
 @media(max-width:375px){
   .header-main{
@@ -921,5 +1010,51 @@ color: #ffffff;
   .mobile-header {
       display: block;
   }
+  .mobile-overlay{
+    position: fixed;
+    left:-100%;
+    top:0;
+    gap:0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F6f8F9;
+    max-width: 375px;
+    width: 100%;
+    /* text-align: center; */
+    transition: 3s;
+  }
+ 
+  .menu-logo{
+    display: inline-block;
+    margin: 42px 0 90px 39px;
+    font-family:  Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FA6980;
+
+  }
+  .menu-item{
+    margin: 16px 0 0 39px;
+    
+    font-family:  Helvetica, sans-serif;
+    font-size: 11;
+    font-weight: bold;
+    color: #343638;
+    opacity: 0.5;
+  }
+  .menu-item:first-child{
+    opacity: 1;
+  }
+.mobile-overlay.active{
+  left:0;
+  visibility: visible;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  
+  
+}
+
 }
  
