@@ -187,8 +187,8 @@ height: 100%;
   /* First section: */
   /* section1-box1 */
   .section1 {
-    /* max-width: 1440px;
-    width: 100%; */
+    max-width: 1440px;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -196,19 +196,18 @@ height: 100%;
   .section1-box1 {
     position: relative;
     max-width: 840px;
-    /* width: 100%; */
+    width: 100%;
+    flex-wrap: wrap;
   }
   .box1-image1 {
     object-fit: cover;
   }
   .box1-wrapper1 {
     position: absolute;
-    width: 608px;
-    left: 140px;
-    top: 177px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     color: #ffffff;
-    display: flex;
-    flex-direction: column;
   }
   .box1-text2 {
     font-size: 24px;
@@ -264,14 +263,17 @@ height: 100%;
     width: 100%;
     height: 600px;
     background-color: #ffffff;
+    position: relative;
   }
   .box2{
     max-width: 380px;
     width: 100%;
-    top: 80px;
-    left: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     display: flex;
     flex-direction: column;
+    position: absolute;
   }
   .box2-topic {
    display: flex;
